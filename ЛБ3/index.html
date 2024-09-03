@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Лаба 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<main>
+    <h1>Анкета для заказа телефона</h1>
+    <form action="https://webhook.site/2ecea19b-66bd-492a-b678-20df2db007c2" method="post">
+        <div>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <div>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="surname" required>
+        </div>
+        <br>
+        <div>
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <br>
+        <div>
+            <label for="password">Пароль</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <br>
+        <div>
+            <label>
+                Объем памяти
+                <select name="memory" required>
+                    <option value="64">64</option>
+                    <option value="256">256</option>
+                    <option value="512">512</option>
+                </select>
+            </label>
+        </div>
+        <br>
+        <fieldset>
+            <legend>Заполните данные о заказе</legend>
+            <div>
+                Способ доставки
+                <br>
+                <label>
+                    <input type="radio" name="delivery" value="courier" checked required> Курьером
+                </label>
+                <br>
+                <label>
+                    <input type="radio" name="delivery" value="pickup" required> Самовывоз
+                </label>
+            </div>
+            <br>
+            <div>
+                Добавить к заказу
+                <br>
+                <label>
+                    <input type="checkbox" name="add[]" value="case"> Прозрачный чехол
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="add[]" value="MagSafe"> Беспроводное зарядное устройство MagSafe
+                </label>
+                <br>
+                <label>
+                    <input type="checkbox" name="add[]" value="AirPods"> Наушники AirPods
+                </label>
+            </div>
+        </fieldset>
+        <br>
+        <div>
+            <label for="comment">
+                Комментарий к заказу </label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="image">
+                Добавьте картинку </label>
+            <input type="file" id="image" name="file">
+        </div>
+        <br>
+        <div>
+            <label for="checkbox">
+                <input type="checkbox" id="checkbox" name="conditions" value="1" required> Принимаю политику
+            </label>
+        </div>
+        <br>
+        <input type="reset" value="Сбросить значение">
+        <br>
+        <button type="submit">Заказать</button>
+    </form>
+</main>
+
+</body>
+</html>
