@@ -1,0 +1,59 @@
+html {
+    font-family: sans-serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  header {
+    background: rgb(52, 206, 142);
+    height: 100px;
+  }
+
+  h1 {
+    text-align: center;
+    color: white;
+    line-height: 100px;
+    margin: 0;
+  }
+
+  article {
+    padding: 10px;
+    margin: 10px;
+    background: rgba(16, 233, 215, 0.178);
+  }
+
+  .all {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .parts {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .part-one {
+    display: flex;
+    flex-basis: 33%;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    order: 2;
+  }
+
+  .part-two {
+    flex-basis: 66%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .part-two article {
+    flex-basis: calc(50% - 40px);
+  }
+
+  .first {
+    display: flex;
+  }
