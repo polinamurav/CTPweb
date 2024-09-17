@@ -84,7 +84,6 @@ button:hover {
   animation: bounce 2s ease-in-out;
 }
 
-/* Анимация падения и отскока мяча */
 @keyframes bounce {
   0% {
     bottom: 100%;
